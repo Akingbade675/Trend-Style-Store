@@ -1,0 +1,73 @@
+name: trend_style_store
+description: 'A new Flutter project.'
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+#---------------PACKAGES---------------#
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Utility Packages
+  dio: ^5.4.3+1
+  url_launcher: ^6.2.6
+  logger: ^2.2.0
+  intl: ^0.19.0
+
+  # Icons
+  cupertino_icons: ^1.0.6
+  iconsax: ^0.0.8
+
+  # State management
+  flutter_bloc: ^8.1.5
+
+  flutter_native_splash: ^2.4.0
+  image_picker: ^1.1.0
+  cached_network_image: ^3.3.1
+  hive: ^2.2.3
+  shared_preferences: ^2.2.3
+
+#-------------PACKAGES END-------------#
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  #---------------LOCAL ASSETS---------------#
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/logos/
+
+  #---------------LOCAL FONTS---------------#
+  fonts:
+    - family: Sora
+      fonts:
+        - asset: assets/fonts/Sora-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Sora-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Sora-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Sora-Bold.ttf
+          weight: 700
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
