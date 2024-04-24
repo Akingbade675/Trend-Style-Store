@@ -7,14 +7,19 @@ class TTexts {
   static const String appVersion = 'App Version';
 
   // -- Onboarding --
-  static const String onboarding1Title = 'Start your journey';
-  static const String onboarding1Description = 'Onboarding 1 Description';
+  static const String onboardingTitle1 = 'Choose Your Style';
+  static const String onboardingDescription1 =
+      'Welcome to a World of Limitless Choices - Your Perfect Style is Just a Click Away!';
 
-  static const String onboarding2Title = 'Onboarding 2 Title';
-  static const String onboarding2Description = 'Onboarding 2 Description';
+  static const String onboardingTitle2 = 'Select Your Payment Method';
+  static const String onboardingDescription2 =
+      'Fast, Secure, and Convenient Payment Options - Choose the One that Suits You Best!';
 
-  static const String onboarding3Title = 'Onboarding 3 Title';
-  static const String onboarding3Description = 'Onboarding 3 Description';
+  static const String onboardingTitle3 = 'Deliver At Your Doorstep';
+  static const String onboardingDescription3 =
+      'From Our Store to Your Door - Shop from the Comfort of Your Home!';
+
+  static const String skip = 'Skip';
 
   // -- Home --
   static const String homeAppBarTitle = 'Home';

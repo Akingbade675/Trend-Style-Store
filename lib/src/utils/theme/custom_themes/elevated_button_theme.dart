@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trend_style_store/src/utils/constants/colors.dart';
 
 /// -- Light & Dark Elevated Button Themes
 class TElevatedButtonTheme {
@@ -27,10 +28,10 @@ class TElevatedButtonTheme {
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
-      backgroundColor: Colors.blue,
+      backgroundColor: TColors.primary,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.blue),
+      side: const BorderSide(color: TColors.primary),
       padding: const EdgeInsets.symmetric(vertical: 18),
       textStyle: const TextStyle(
           fontSize: 16.0, color: Colors.white, fontWeight: FontWeight.w600),

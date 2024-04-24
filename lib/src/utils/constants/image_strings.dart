@@ -13,9 +13,12 @@ class TImages {
   static const String twitterLogo = 'assets/images/twitter_logo.png';
 
   // -- Onboarding Images --
-  static const String onboarding1 = 'assets/images/onboarding1.png';
-  static const String onboarding2 = 'assets/images/onboarding2.png';
-  static const String onboarding3 = 'assets/images/onboarding3.png';
+  static const String onboarding1 =
+      'assets/images/onboarding_images/sammy-line-searching.gif';
+  static const String onboarding2 =
+      'assets/images/onboarding_images/sammy-line-shopping.gif';
+  static const String onboarding3 =
+      'assets/images/onboarding_images/sammy-line-delivery.gif';
 
   // -- User Avatars --
   static const String userAvatar1 = 'assets/images/user_avatar1.png';
