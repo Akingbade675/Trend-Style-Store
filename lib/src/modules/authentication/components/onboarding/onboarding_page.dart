@@ -29,7 +29,7 @@ class OnBoardingPage extends StatelessWidget {
             style: context.textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-          TSpacer.hSpacing(TSizes.spaceBtwItems),
+          TSpacer.vSpacing(TSizes.spaceBtwItems),
           Text(
             description,
             style: context.textTheme.bodyMedium,

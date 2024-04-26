@@ -18,7 +18,7 @@ class OnBoardingNextButton extends StatelessWidget {
       bottom: context.bottomBarHeight,
       child: ElevatedButton(
         onPressed: () {
-          context.read<OnBoardingCubit>().onNextPressed();
+          context.read<OnBoardingCubit>().onNextPressed(context);
         },
         style: ElevatedButton.styleFrom(
           shape: const CircleBorder(),

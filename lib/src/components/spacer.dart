@@ -1,24 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:trend_style_store/src/utils/constants/sizes.dart';
 
-class TSpacer extends StatelessWidget {
-  final double? height;
-  final double? width;
+class TSpacer {
+  // -- Horizontal Spacing --
+  static SizedBox hSpacing(double width) => SizedBox(width: width);
 
-  const TSpacer({super.key, required this.height, required this.width});
+  // -- Vertical Spacing --
+  static SizedBox vSpacing(double height) => SizedBox(height: height);
 
-  factory TSpacer.hSpacing(double height) {
-    return TSpacer(height: height, width: null);
-  }
-
-  factory TSpacer.vSpacing(double width) {
-    return TSpacer(height: null, width: width);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: height,
-      width: width,
-    );
-  }
+  static EdgeInsets paddingWithAppHeight =
+      const EdgeInsets.all(TSizes.defaultSpace)
+          .copyWith(top: TSizes.appBarHeight);
 }
