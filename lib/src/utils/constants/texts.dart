@@ -68,6 +68,6 @@ class TTexts {
       'Welcome to your Ultimate Shopping Destination: Your Account is Craeted, Unleash the Joy of Seamless Online Shopping!';
 
   // -- Home --
-  static const String homeAppBarTitle = 'Home';
-  static const String homeAppBarSubtitle = 'Subtitle';
+  static const String homeAppBarTitle = 'Welcome to our shop,';
+  static const String homeAppBarSubtitle = 'Abdulbasit Akingbade';
 }

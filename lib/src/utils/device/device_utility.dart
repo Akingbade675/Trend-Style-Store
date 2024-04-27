@@ -100,7 +100,7 @@ class TDeviceUtils {
     return MediaQuery.of(context).padding.bottom;
   }
 
-  static double getAppBarHeight(BuildContext context) {
+  static double getAppBarHeight() {
     return AppBar().preferredSize.height;
   }
 

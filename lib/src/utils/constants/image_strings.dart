@@ -33,6 +33,12 @@ class TImages {
       'assets/images/animations/sammy-line-man-receives-a-mail.png';
   static const String verifyIllustration = '';
 
+  // -- Categories Icons --
+  static const String shoesCategoryIcon =
+      'assets/icons/categories/icons8-shoes-64.png';
+  static const String clothesCategoryIcon =
+      'assets/icons/categories/icons8-clothes-64.png';
+
   // -- User Avatars --
   static const String userAvatar1 = 'assets/images/user_avatar1.png';
 
