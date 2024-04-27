@@ -3,6 +3,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:trend_style_store/src/components/spacer.dart';
 import 'package:trend_style_store/src/modules/authentication/views/forgot_password.dart';
 import 'package:trend_style_store/src/modules/authentication/views/signup.dart';
+import 'package:trend_style_store/src/navigation_menu.dart';
 import 'package:trend_style_store/src/utils/constants/extentions.dart';
 import 'package:trend_style_store/src/utils/constants/sizes.dart';
 import 'package:trend_style_store/src/utils/constants/texts.dart';
@@ -61,7 +62,7 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => context.pushAndRemoveUntil(NavigationMenu()),
                 child: const Text(TTexts.signin),
               ),
             ),
