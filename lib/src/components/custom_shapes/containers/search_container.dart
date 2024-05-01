@@ -11,11 +11,13 @@ class TSearchContainer extends StatelessWidget {
   final IconData icon;
   final VoidCallback? onTap;
   final bool showBackground, showBorder;
+  final EdgeInsetsGeometry padding;
 
   const TSearchContainer({
     super.key,
     required this.text,
     this.icon = Iconsax.search_normal,
+    this.padding = const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
     this.showBackground = true,
     this.showBorder = true,
     this.onTap,
@@ -27,13 +29,14 @@ class TSearchContainer extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+        padding: padding,
         child: TCircularContainer(
           width: double.infinity,
           height: 56,
           radius: TSizes.cardRadiusLg,
-          padding: TSizes.md,
-          border: showBorder ? Border.all(color: TColors.grey) : null,
+          padding: const EdgeInsets.all(TSizes.md),
+          showBorder: showBorder,
+          borderColor: TColors.grey,
           backgroundColor: showBackground
               ? dark
                   ? TColors.dark

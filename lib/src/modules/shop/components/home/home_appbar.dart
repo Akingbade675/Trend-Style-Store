@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trend_style_store/src/components/appbar/appbar.dart';
-import 'package:trend_style_store/src/components/products.cart/cart_menu_icon.dart';
+import 'package:trend_style_store/src/components/products/cart/cart_menu_icon.dart';
 import 'package:trend_style_store/src/utils/constants/colors.dart';
 import 'package:trend_style_store/src/utils/constants/extentions.dart';
 import 'package:trend_style_store/src/utils/constants/texts.dart';
@@ -29,7 +29,12 @@ class THomeAppBar extends StatelessWidget {
         ],
       ),
       actions: [
-        TCartCounterIcon(onPressed: () {}, iconColor: TColors.white),
+        TCartCounterIcon(
+          onPressed: () {},
+          iconColor: TColors.white,
+          counterBgColor: TColors.dark.withOpacity(0.9),
+          counterColor: TColors.white,
+        ),
       ],
     );
   }

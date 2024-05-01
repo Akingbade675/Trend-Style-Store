@@ -16,8 +16,8 @@ class TColors {
   static const Color textDisabled = Color(0xFFBDBDBD);
 
   // Background colors
-  static const Color backgroundLight = Color(0xFFF6F6F6);
-  static const Color backgroundDark = Color(0xFF212121);
+  static const Color bgLight = Color(0xFFF6F6F6);
+  static const Color bgDark = Color(0xFF212121);
   static const Color backgroundPrimary = Color(0xFFF3F5FF);
 
   // Background Container colors
@@ -52,7 +52,8 @@ class TColors {
   );
 
   // Neutral Shades
-  static const Color black = Color(0xFF000000);
+  // static const Color black = Color(0xFF000000);
+  static const Color black = Color(0xFF232323);
   static const Color dark = Color(0xFF0C0F14);
   static const Color darkerGrey = Color(0xFF212121);
   static const Color darkGrey = Color(0xFF424242);

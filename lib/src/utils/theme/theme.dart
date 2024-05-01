@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trend_style_store/src/utils/constants/colors.dart';
 import 'package:trend_style_store/src/utils/theme/custom_themes/appbar_theme.dart';
 import 'package:trend_style_store/src/utils/theme/custom_themes/bottom_sheet_theme.dart';
 import 'package:trend_style_store/src/utils/theme/custom_themes/checkbox_theme.dart';
@@ -36,7 +37,7 @@ class TAppTheme {
     primaryColor: Colors.lightGreen,
     textTheme: TTextTheme.darkTextTheme,
     chipTheme: TChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: TColors.dark,
     appBarTheme: TAppBarTheme.darkAppBarTheme,
     checkboxTheme: TCheckBoxTheme.darkCheckBoxTheme,
     bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
