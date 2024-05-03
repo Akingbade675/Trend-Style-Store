@@ -29,15 +29,15 @@ class TVerticalImageText extends StatelessWidget {
           Container(
             width: 56,
             height: 56,
-            padding: const EdgeInsets.all(TSizes.sm),
+            padding: const EdgeInsets.all(TSizes.sm * 1.5),
             decoration: BoxDecoration(
-              color: backgroundColor ?? (dark ? TColors.black : TColors.white),
+              color: backgroundColor ?? (dark ? TColors.dark : TColors.white),
               shape: BoxShape.circle,
             ),
             child: Image.asset(
               image,
               fit: BoxFit.cover,
-              // color: dark ? TColors.white : TColors.black,
+              color: dark ? TColors.white : TColors.dark,
             ),
           ),
 

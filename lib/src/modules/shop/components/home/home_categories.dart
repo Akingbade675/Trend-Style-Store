@@ -20,7 +20,7 @@ class THomeCategories extends StatelessWidget {
         separatorBuilder: (_, __) => TSpacer.hSpacing(TSizes.spaceBtwItems),
         itemBuilder: (_, index) {
           return const TVerticalImageText(
-              image: TImages.shoesCategoryIcon, title: 'Shoes');
+              image: TImages.brandImage3, title: 'Shoes');
         },
       ),
     );

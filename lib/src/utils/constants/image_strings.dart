@@ -62,7 +62,8 @@ class TImages {
   static const String brandImage3 = 'assets/images/brands/icons8-shoes.png';
 
   // -- User Avatars --
-  static const String userAvatar1 = 'assets/images/user_avatar1.png';
+  static const String userAvatar = 'assets/images/user/user_avatar.jpg';
+  static const String userAvatar1 = 'assets/images/user/user_avatar1.png';
 
   // -- Error Images --
   static const String errorImage = 'assets/images/error_image.png';

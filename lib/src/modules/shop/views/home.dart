@@ -46,6 +46,7 @@ class HomeScreen extends StatelessWidget {
 
                         // -- Categories --
                         const THomeCategories(),
+                        TSpacer.vSpacing(TSizes.spaceBtwSections * 2)
                       ],
                     ),
                   ),

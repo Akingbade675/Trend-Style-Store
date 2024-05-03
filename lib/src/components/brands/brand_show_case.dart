@@ -21,21 +21,14 @@ class TBrandShowcase extends StatelessWidget {
       backgroundColor: Colors.transparent,
       margin: const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           const TBrandCard(showBorder: false),
           TSpacer.vSpacing(TSizes.spaceBtwItems),
           Row(
-            children: [
-              ListView.separated(
-                shrinkWrap: true,
-                itemCount: images.length,
-                padding: EdgeInsets.zero,
-                physics: const NeverScrollableScrollPhysics(),
-                itemBuilder: (_, index) =>
-                    brandTopProductImageWidget(images[index], context),
-                separatorBuilder: (_, __) => TSpacer.hSpacing(TSizes.sm),
-              ),
-            ],
+            children: images
+                .map((image) => brandTopProductImageWidget(image, context))
+                .toList(),
           ),
         ],
       ),
@@ -48,6 +41,7 @@ class TBrandShowcase extends StatelessWidget {
         height: 100,
         backgroundColor: context.isDarkMode ? TColors.bgDark : TColors.bgLight,
         padding: const EdgeInsets.all(TSizes.md),
+        margin: const EdgeInsets.all(TSizes.sm),
         child: Image.asset(image, fit: BoxFit.contain),
       ),
     );

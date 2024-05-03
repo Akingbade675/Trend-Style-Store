@@ -27,7 +27,7 @@ class TPromoSlider extends StatelessWidget {
     return Column(
       children: [
         CarouselSlider.builder(
-          itemCount: 3,
+          itemCount: promoBanners.length,
           itemBuilder: (context, index, realIndex) {
             return TRoundedImage(imageUrl: promoBanners[index]);
           },
@@ -50,7 +50,7 @@ class TPromoSlider extends StatelessWidget {
             builder: (context, value, child) {
               return AnimatedSmoothIndicator(
                 activeIndex: value,
-                count: 3,
+                count: promoBanners.length,
                 effect: const ExpandingDotsEffect(
                   activeDotColor: TColors.primary,
                   dotHeight: 6,

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:trend_style_store/src/modules/personalization/views/settings.dart';
 import 'package:trend_style_store/src/modules/shop/views/home.dart';
 import 'package:trend_style_store/src/modules/shop/views/store.dart';
+import 'package:trend_style_store/src/modules/shop/views/wishlist.dart';
 import 'package:trend_style_store/src/utils/constants/colors.dart';
 import 'package:trend_style_store/src/utils/constants/extentions.dart';
 
@@ -13,8 +15,8 @@ class NavigationMenu extends StatelessWidget {
   final List<Widget> pages = const [
     HomeScreen(),
     StoreScreen(),
-    Center(child: Text('Wishlist')),
-    Center(child: Text('Profile')),
+    FavouriteScreen(),
+    SettingsScreen(),
   ];
 
   @override
