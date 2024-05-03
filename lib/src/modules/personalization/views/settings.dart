@@ -7,6 +7,7 @@ import 'package:trend_style_store/src/components/list_tiles/settings_menu_tile.d
 import 'package:trend_style_store/src/components/list_tiles/user_profile_tile.dart';
 import 'package:trend_style_store/src/components/spacer.dart';
 import 'package:trend_style_store/src/components/texts/section_heading.dart';
+import 'package:trend_style_store/src/modules/personalization/views/profile.dart';
 import 'package:trend_style_store/src/utils/constants/colors.dart';
 import 'package:trend_style_store/src/utils/constants/extentions.dart';
 import 'package:trend_style_store/src/utils/constants/sizes.dart';
@@ -33,7 +34,8 @@ class SettingsScreen extends StatelessWidget {
                   ),
 
                   // -- User Profile Card --
-                  const TUserProfileTile(),
+                  TUserProfileTile(
+                      onPressed: () => context.push(const ProfileScreen())),
                   TSpacer.vSpacing(TSizes.spaceBtwSections),
                 ],
               ),
@@ -126,6 +128,9 @@ class SettingsScreen extends StatelessWidget {
                         CupertinoSwitch(value: false, onChanged: (value) {}),
                     onTap: () {},
                   ),
+
+                  TSpacer.vSpacing(TSizes.spaceBtwSections),
+                  OutlinedButton(onPressed: () {}, child: const Text('Logout')),
                 ],
               ),
             ),

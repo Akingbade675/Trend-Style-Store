@@ -6,8 +6,11 @@ import 'package:trend_style_store/src/utils/constants/extentions.dart';
 import 'package:trend_style_store/src/utils/constants/image_strings.dart';
 
 class TUserProfileTile extends StatelessWidget {
+  final VoidCallback onPressed;
+
   const TUserProfileTile({
     super.key,
+    required this.onPressed,
   });
 
   @override
@@ -28,7 +31,7 @@ class TUserProfileTile extends StatelessWidget {
         style: context.textTheme.bodyMedium?.copyWith(color: TColors.white),
       ),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: const Icon(
           Iconsax.edit,
           color: TColors.white,
