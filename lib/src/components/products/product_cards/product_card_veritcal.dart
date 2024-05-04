@@ -8,6 +8,7 @@ import 'package:trend_style_store/src/components/spacer.dart';
 import 'package:trend_style_store/src/components/texts/brand_title_text_with_verified_icon.dart';
 import 'package:trend_style_store/src/components/texts/product_price_text.dart';
 import 'package:trend_style_store/src/components/texts/product_title_text.dart';
+import 'package:trend_style_store/src/modules/shop/views/product_details.dart';
 import 'package:trend_style_store/src/utils/constants/colors.dart';
 import 'package:trend_style_store/src/utils/constants/extentions.dart';
 import 'package:trend_style_store/src/utils/constants/image_strings.dart';
@@ -20,7 +21,7 @@ class TProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = context.isDarkMode;
     return GestureDetector(
-      onTap: () {},
+      onTap: () => context.push(const ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),

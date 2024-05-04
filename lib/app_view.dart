@@ -11,7 +11,7 @@ class AppView extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
-      home: const OnBoardingScreen(),
+      home: const OnBoardingScreen(), // ProductDetailScreen(),
     );
   }
 }

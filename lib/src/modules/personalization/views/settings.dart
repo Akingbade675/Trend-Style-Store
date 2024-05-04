@@ -108,29 +108,39 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.location,
                     title: 'Geolocation',
                     subtitle: 'Set recommendations based on location',
-                    trailing:
-                        CupertinoSwitch(value: true, onChanged: (value) {}),
+                    trailing: CupertinoSwitch(
+                        value: true,
+                        activeColor: TColors.primary,
+                        onChanged: (value) {}),
                     onTap: () {},
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.security_user,
                     title: 'Safe Mode',
                     subtitle: 'Toggle safe mode for enhanced security',
-                    trailing:
-                        CupertinoSwitch(value: false, onChanged: (value) {}),
+                    trailing: CupertinoSwitch(
+                        value: false,
+                        activeColor: TColors.primary,
+                        onChanged: (value) {}),
                     onTap: () {},
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.image,
                     title: 'HD Image Quality',
                     subtitle: 'Set image quality to be seen',
-                    trailing:
-                        CupertinoSwitch(value: false, onChanged: (value) {}),
+                    trailing: CupertinoSwitch(
+                        value: false,
+                        activeColor: TColors.primary,
+                        onChanged: (value) {}),
                     onTap: () {},
                   ),
 
                   TSpacer.vSpacing(TSizes.spaceBtwSections),
-                  OutlinedButton(onPressed: () {}, child: const Text('Logout')),
+                  SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton(
+                        onPressed: () {}, child: const Text('Logout')),
+                  ),
                 ],
               ),
             ),

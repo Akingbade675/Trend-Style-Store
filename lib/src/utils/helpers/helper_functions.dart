@@ -49,4 +49,23 @@ class THelperFunctions {
   static List<T> removeDuplicates<T>(List<T> list) {
     return list.toSet().toList();
   }
+
+  static Color? getColor(String value) => switch (value) {
+        'Green' => Colors.green,
+        'Red' => Colors.red,
+        'Blue' => Colors.blue,
+        'Pink' => Colors.pink,
+        'Black' => Colors.black,
+        'Yellow' => Colors.yellow,
+        'Orange' => Colors.orange,
+        'Purple' => Colors.purple,
+        'White' => Colors.white,
+        'Grey' => Colors.grey,
+        'Brown' => Colors.brown,
+        'Cyan' => Colors.cyan,
+        'Teal' => Colors.teal,
+        'Amber' => Colors.amber,
+        'Lime' => Colors.lime,
+        _ => null,
+      };
 }

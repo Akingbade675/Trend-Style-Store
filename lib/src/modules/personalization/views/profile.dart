@@ -67,7 +67,7 @@ class ProfileScreen extends StatelessWidget {
               TextButton(
                 onPressed: () {},
                 child: const Text(
-                  'Cloce Account',
+                  'Close Account',
                   style: TextStyle(color: Colors.red),
                 ),
               ),
