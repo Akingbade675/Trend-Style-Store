@@ -64,6 +64,12 @@ class TImages {
   // -- User Avatars --
   static const String userAvatar = 'assets/images/user/user_avatar.jpg';
   static const String userAvatar1 = 'assets/images/user/user_avatar1.png';
+  static const String userAvatar2 = 'assets/images/user/user_avatar2.png';
+
+  // -- Payment Methods --
+  static const String applePay = 'assets/icons/payment_methods/applepay.png';
+  static const String amazonPay = 'assets/icons/payment_methods/amazonpay.png';
+  static const String gPay = 'assets/icons/payment_methods/gpay.png';
 
   // -- Error Images --
   static const String errorImage = 'assets/images/error_image.png';

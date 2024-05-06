@@ -7,7 +7,9 @@ import 'package:trend_style_store/src/components/list_tiles/settings_menu_tile.d
 import 'package:trend_style_store/src/components/list_tiles/user_profile_tile.dart';
 import 'package:trend_style_store/src/components/spacer.dart';
 import 'package:trend_style_store/src/components/texts/section_heading.dart';
+import 'package:trend_style_store/src/modules/personalization/views/address.dart';
 import 'package:trend_style_store/src/modules/personalization/views/profile.dart';
+import 'package:trend_style_store/src/modules/shop/views/order.dart';
 import 'package:trend_style_store/src/utils/constants/colors.dart';
 import 'package:trend_style_store/src/utils/constants/extentions.dart';
 import 'package:trend_style_store/src/utils/constants/sizes.dart';
@@ -54,7 +56,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: 'My Addresses',
                     subtitle: 'Set shopping delivery address',
-                    onTap: () {},
+                    onTap: () => context.push(const UserAddressScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.shopping_cart,
@@ -66,7 +68,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subtitle: 'View and manage your shopping orders',
-                    onTap: () {},
+                    onTap: () => context.push(const OrderScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.bank,

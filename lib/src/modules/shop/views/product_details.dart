@@ -8,6 +8,7 @@ import 'package:trend_style_store/src/modules/shop/components/product_details/pr
 import 'package:trend_style_store/src/modules/shop/components/product_details/product_detail_image_slider.dart';
 import 'package:trend_style_store/src/modules/shop/components/product_details/product_meta_data.dart';
 import 'package:trend_style_store/src/modules/shop/components/product_details/rating_share_widget.dart';
+import 'package:trend_style_store/src/modules/shop/views/product_reviews.dart';
 import 'package:trend_style_store/src/utils/constants/colors.dart';
 import 'package:trend_style_store/src/utils/constants/extentions.dart';
 import 'package:trend_style_store/src/utils/constants/sizes.dart';
@@ -88,7 +89,8 @@ class ProductDetailScreen extends StatelessWidget {
                       const TSectionHeading(
                           title: "Reviews (199)", showActionButton: false),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () =>
+                            context.push(const ProductReviewsScreen()),
                         icon: const Icon(Iconsax.arrow_right_3, size: 18),
                       ),
                     ],

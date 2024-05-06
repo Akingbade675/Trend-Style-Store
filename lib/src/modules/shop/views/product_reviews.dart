@@ -13,8 +13,13 @@ class ProductReviewsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:
-          const TAppBar(title: Text('Rating & Reviews'), showBackArrow: true),
+      appBar: TAppBar(
+        title: Text(
+          'Rating & Reviews',
+          style: context.textTheme.headlineSmall,
+        ),
+        showBackArrow: true,
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(TSizes.defaultSpace),

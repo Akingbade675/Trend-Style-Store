@@ -37,7 +37,7 @@ class TUserReviewCard extends StatelessWidget {
         ),
         TSpacer.vSpacing(TSizes.spaceBtwItems),
         const ReadMoreText(
-          'The user interface is quite intuitive. I was able to navigate and make purchases seamlessly. Great job!',
+          'The user interface is quite intuitive. I was able to navigate and make purchases seamlessly. You guys are doing a great job and I will definitely recommend this app to my friends. Keep it up!',
           trimLines: 2,
           trimMode: TrimMode.Line,
           trimCollapsedText: 'show more',
@@ -69,7 +69,7 @@ class TUserReviewCard extends StatelessWidget {
                 ),
                 TSpacer.vSpacing(TSizes.spaceBtwItems),
                 const ReadMoreText(
-                  'The user interface is quite intuitive. I was able to navigate and make purchases seamlessly. Great job!',
+                  'Thank you for your review. We are glad you had a great experience using our app. We will continue to improve our services to serve you better. Thank you for choosing Trend Style Store.',
                   trimLines: 2,
                   trimMode: TrimMode.Line,
                   trimCollapsedText: 'show more',
