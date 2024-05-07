@@ -8,6 +8,8 @@ import 'package:trend_style_store/src/components/texts/section_heading.dart';
 import 'package:trend_style_store/src/modules/shop/components/home/home_appbar.dart';
 import 'package:trend_style_store/src/modules/shop/components/home/home_categories.dart';
 import 'package:trend_style_store/src/modules/shop/components/home/promo_slider.dart';
+import 'package:trend_style_store/src/modules/shop/views/all_products.dart';
+import 'package:trend_style_store/src/utils/constants/extentions.dart';
 import 'package:trend_style_store/src/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -63,7 +65,9 @@ class HomeScreen extends StatelessWidget {
                   TSpacer.vSpacing(TSizes.spaceBtwSections),
 
                   // -- Popular Products --
-                  TSectionHeading(title: 'Popular Products', onPressed: () {}),
+                  TSectionHeading(
+                      title: 'Popular Products',
+                      onPressed: () => context.push(const AllProductsScreen())),
                   TSpacer.vSpacing(TSizes.spaceBtwItems),
                   TGridLayout(
                     itemCount: 4,

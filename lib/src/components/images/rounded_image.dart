@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trend_style_store/src/utils/constants/sizes.dart';
 
 class TRoundedImage extends StatelessWidget {
-  final double width, height;
+  final double? width, height;
   final String imageUrl;
   final BoxBorder? border;
   final Color? backgroundColor;
