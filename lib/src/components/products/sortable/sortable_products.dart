@@ -21,7 +21,13 @@ class TSortableProducts extends StatelessWidget {
             prefixIcon: Icon(Iconsax.sort),
           ),
           onChanged: (value) {},
-          items: ['Name', 'Higher Price', 'Lower Price', 'Newest', 'Popularity']
+          items: [
+            'Name',
+            'Highest Price',
+            'Lowest Price',
+            'Newest',
+            'Popularity'
+          ]
               .map((option) =>
                   DropdownMenuItem(value: option, child: Text(option)))
               .toList(),

@@ -45,7 +45,7 @@ class SettingsScreen extends StatelessWidget {
 
             // -- Body --
             Padding(
-              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              padding: EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
                   const TSectionHeading(

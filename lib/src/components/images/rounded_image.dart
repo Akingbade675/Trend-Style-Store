@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:trend_style_store/src/utils/constants/sizes.dart';
 
 class TRoundedImage extends StatelessWidget {
@@ -19,7 +20,7 @@ class TRoundedImage extends StatelessWidget {
     required this.imageUrl,
     this.border,
     this.backgroundColor, //TColors.grey,
-    this.fit = BoxFit.fitWidth,
+    this.fit = BoxFit.contain,
     this.padding,
     this.borderRadius = TSizes.md,
     this.onTap,
@@ -37,10 +38,10 @@ class TRoundedImage extends StatelessWidget {
         decoration: BoxDecoration(
           border: border,
           color: backgroundColor,
-          borderRadius: BorderRadius.circular(borderRadius),
+          borderRadius: BorderRadius.circular(borderRadius.w),
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(borderRadius),
+          borderRadius: BorderRadius.circular(borderRadius.w),
           child: Image(
             image: isNetworkImage
                 ? NetworkImage(imageUrl)

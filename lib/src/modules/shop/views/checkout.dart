@@ -26,7 +26,7 @@ class CheckoutScreen extends StatelessWidget {
         showBackArrow: true,
       ),
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.all(TSizes.defaultSpace),
+        padding: EdgeInsets.all(TSizes.defaultSpace),
         child: ElevatedButton(
           onPressed: () => context.push(
             SuccessScreen(
@@ -41,7 +41,7 @@ class CheckoutScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               // -- Items in Cart --

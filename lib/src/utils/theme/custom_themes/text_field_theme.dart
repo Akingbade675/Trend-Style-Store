@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:trend_style_store/src/utils/constants/colors.dart';
 import 'package:trend_style_store/src/utils/constants/sizes.dart';
 
@@ -9,6 +10,10 @@ class TTextFieldTheme {
     errorMaxLines: 3,
     prefixIconColor: TColors.darkGrey,
     suffixIconColor: TColors.darkGrey,
+    // contentPadding: EdgeInsets.symmetric(
+    //   vertical: TSizes.inputFieldPaddingV,
+    //   horizontal: TSizes.inputFieldPaddingH,
+    // ),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
       borderSide: const BorderSide(width: 1, color: TColors.grey),
@@ -34,11 +39,11 @@ class TTextFieldTheme {
         const TextStyle().copyWith(color: Colors.black.withOpacity(0.8)),
     labelStyle: const TextStyle().copyWith(
       color: TColors.black,
-      fontSize: TSizes.fontMd,
+      fontSize: TSizes.fontMd.sp,
     ),
     hintStyle: const TextStyle().copyWith(
       color: TColors.black,
-      fontSize: TSizes.fontSm,
+      fontSize: TSizes.fontSm.sp,
     ),
   );
 
@@ -71,11 +76,11 @@ class TTextFieldTheme {
         const TextStyle().copyWith(color: Colors.white.withOpacity(0.8)),
     labelStyle: const TextStyle().copyWith(
       color: TColors.white,
-      fontSize: TSizes.fontMd,
+      fontSize: TSizes.fontMd.sp,
     ),
     hintStyle: const TextStyle().copyWith(
       color: TColors.white,
-      fontSize: TSizes.fontSm,
+      fontSize: TSizes.fontSm.sp,
     ),
   );
 }

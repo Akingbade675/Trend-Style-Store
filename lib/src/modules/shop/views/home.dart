@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
 
                   // -- Categories --
                   Padding(
-                    padding: const EdgeInsets.only(left: TSizes.defaultSpace),
+                    padding: EdgeInsets.only(left: TSizes.defaultSpace),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
                             title: 'Popular Categories',
                             showActionButton: false),
 
-                        TSpacer.vSpacing(TSizes.spaceBtwSections),
+                        TSpacer.vSpacing(TSizes.spaceBtwItems),
 
                         // -- Categories --
                         const THomeCategories(),
@@ -56,8 +56,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.all(TSizes.defaultSpace).copyWith(top: 0),
+              padding: EdgeInsets.all(TSizes.defaultSpace).copyWith(top: 0),
               child: Column(
                 children: [
                   // -- Promo Banners --

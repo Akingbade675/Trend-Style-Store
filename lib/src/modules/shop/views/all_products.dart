@@ -14,10 +14,10 @@ class AllProductsScreen extends StatelessWidget {
         title: Text('Popular Products', style: context.textTheme.headlineSmall),
         showBackArrow: true,
       ),
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(TSizes.defaultSpace),
-          child: TSortableProducts(),
+          child: const TSortableProducts(),
         ),
       ),
     );

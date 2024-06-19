@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:trend_style_store/src/utils/constants/colors.dart';
 
 /// -- Light & Dark Elevated Button Themes
@@ -32,10 +33,10 @@ class TElevatedButtonTheme {
       disabledForegroundColor: TColors.grey,
       disabledBackgroundColor: TColors.grey,
       side: const BorderSide(color: TColors.primary),
-      padding: const EdgeInsets.symmetric(vertical: 24),
-      textStyle: const TextStyle(
-          fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      padding: EdgeInsets.symmetric(vertical: 24.w),
+      textStyle: TextStyle(
+          fontSize: 16.sp, color: Colors.white, fontWeight: FontWeight.w600),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.w)),
     ),
   );
 }

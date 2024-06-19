@@ -21,10 +21,10 @@ class UserAddressScreen extends StatelessWidget {
         backgroundColor: TColors.primary,
         child: const Icon(Iconsax.add, color: TColors.white),
       ),
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(TSizes.defaultSpace),
-          child: Column(
+          child: const Column(
             children: [
               TSingleAddress(selectedAddress: true),
               TSingleAddress(),

@@ -12,11 +12,11 @@ class AddNewAddressScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: TAppBar(
-        title: Text('Add new Address', style: context.textTheme.headlineMedium),
+        title: Text('Add new Address', style: context.textTheme.headlineSmall),
         showBackArrow: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(TSizes.defaultSpace),
+        padding: EdgeInsets.all(TSizes.defaultSpace),
         child: Form(
           child: Column(
             children: [

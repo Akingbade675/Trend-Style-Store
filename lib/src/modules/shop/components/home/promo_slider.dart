@@ -29,7 +29,8 @@ class TPromoSlider extends StatelessWidget {
         CarouselSlider.builder(
           itemCount: promoBanners.length,
           itemBuilder: (context, index, realIndex) {
-            return TRoundedImage(imageUrl: promoBanners[index]);
+            return TRoundedImage(
+                fit: BoxFit.cover, imageUrl: promoBanners[index]);
           },
           options: CarouselOptions(
             height: 200,

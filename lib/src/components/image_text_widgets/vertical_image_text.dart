@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:trend_style_store/src/components/spacer.dart';
 import 'package:trend_style_store/src/utils/constants/colors.dart';
 import 'package:trend_style_store/src/utils/constants/extentions.dart';
@@ -27,8 +28,8 @@ class TVerticalImageText extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            width: 56,
-            height: 56,
+            width: 56.w,
+            height: 56.w,
             padding: const EdgeInsets.all(TSizes.sm * 1.5),
             decoration: BoxDecoration(
               color: backgroundColor ?? (dark ? TColors.dark : TColors.white),

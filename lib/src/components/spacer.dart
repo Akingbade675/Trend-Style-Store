@@ -9,6 +9,5 @@ class TSpacer {
   static SizedBox vSpacing(double height) => SizedBox(height: height);
 
   static EdgeInsets paddingWithAppHeight =
-      const EdgeInsets.all(TSizes.defaultSpace)
-          .copyWith(top: TSizes.appBarHeight);
+      EdgeInsets.all(TSizes.defaultSpace).copyWith(top: TSizes.appBarHeight);
 }

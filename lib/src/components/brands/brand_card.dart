@@ -19,7 +19,7 @@ class TBrandCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = context.isDarkMode;
     return GestureDetector(
-      onTap: () {},
+      onTap: onTap,
       child: TCircularContainer(
         padding: const EdgeInsets.all(TSizes.sm),
         backgroundColor: Colors.transparent,

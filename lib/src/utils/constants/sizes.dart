@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class TSizes {
   TSizes._();
 
@@ -62,7 +64,7 @@ class TSizes {
   static const double imageThumbSize = 80.0;
 
   // Default spaces between sections
-  static const double defaultSpace = 24.0;
+  static final double defaultSpace = 24.0.w;
   static const double spaceBtwItems = 16.0;
   static const double spaceBtwSections = 32.0;
 

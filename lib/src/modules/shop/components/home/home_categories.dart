@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:trend_style_store/src/components/image_text_widgets/vertical_image_text.dart';
 import 'package:trend_style_store/src/components/spacer.dart';
 import 'package:trend_style_store/src/modules/shop/views/sub_category.dart';
@@ -14,7 +15,7 @@ class THomeCategories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 80,
+      height: 80.w,
       child: ListView.separated(
         itemCount: 7,
         scrollDirection: Axis.horizontal,

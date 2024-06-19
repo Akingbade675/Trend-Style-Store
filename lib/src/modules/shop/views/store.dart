@@ -8,6 +8,7 @@ import 'package:trend_style_store/src/components/products/cart/cart_menu_icon.da
 import 'package:trend_style_store/src/components/spacer.dart';
 import 'package:trend_style_store/src/components/texts/section_heading.dart';
 import 'package:trend_style_store/src/modules/shop/components/store/category_tab.dart';
+import 'package:trend_style_store/src/modules/shop/views/all_brands.dart';
 import 'package:trend_style_store/src/utils/constants/colors.dart';
 import 'package:trend_style_store/src/utils/constants/extentions.dart';
 import 'package:trend_style_store/src/utils/constants/sizes.dart';
@@ -37,7 +38,7 @@ class StoreScreen extends StatelessWidget {
                 backgroundColor: dark ? TColors.dark : TColors.white,
                 expandedHeight: 440,
                 flexibleSpace: Padding(
-                  padding: const EdgeInsets.all(TSizes.defaultSpace),
+                  padding: EdgeInsets.all(TSizes.defaultSpace),
                   child: ListView(
                     physics: const NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
@@ -56,7 +57,7 @@ class StoreScreen extends StatelessWidget {
                       TSectionHeading(
                         title: 'Featured Brands',
                         showActionButton: true,
-                        onPressed: () {},
+                        onPressed: () => context.push(const AllBrandsScreen()),
                       ),
                       TSpacer.vSpacing(TSizes.defaultSpace),
 

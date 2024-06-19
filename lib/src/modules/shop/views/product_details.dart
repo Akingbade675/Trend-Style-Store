@@ -28,7 +28,7 @@ class ProductDetailScreen extends StatelessWidget {
 
             // -- Product Details --
             Padding(
-              padding: const EdgeInsets.symmetric(
+              padding: EdgeInsets.symmetric(
                 horizontal: TSizes.defaultSpace,
               ).copyWith(bottom: TSizes.defaultSpace),
               child: Column(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:trend_style_store/src/components/spacer.dart';
 import 'package:trend_style_store/src/utils/constants/extentions.dart';
 import 'package:trend_style_store/src/utils/constants/image_strings.dart';
@@ -15,7 +16,7 @@ class TLoginHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image.asset(TImages.darkAppLogo, height: 150),
+        Image.asset(TImages.darkAppLogo, height: 150.h),
         TSpacer.vSpacing(TSizes.md),
         Text(TTexts.loginTitle, style: context.textTheme.headlineMedium),
         TSpacer.vSpacing(TSizes.sm),
